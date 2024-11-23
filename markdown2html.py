@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-''' Write a script markdown2html.py that takes an argument 2 strings:
+""" A script markdown2html.py that takes an argument 2 strings:
     First argument is the name of the Markdown file
     Second argument is the output file name
-'''
+"""
 
 import sys
 import os.path
@@ -76,14 +76,14 @@ if __name__ == '__main__':
                     ordered_start = False
 
                 if not (heading_num or unordered_start or ordered_start):
-OAOAOA                    if not paragraph and length > 1:
-OAOAOA                        html.write('<p>\n')
+                    if not paragraph and length > 1:
+                        html.write('<p>\n')
                         paragraph = True
                     elif length > 1:
                         html.write('<br/>\n')
                     elif paragraph:
                         html.write('</p>\n')
-OAOAOAOAOAOAOAOAOA                        paragraph = False
+                        paragraph = False
 
                 if length > 1:
                     html.write(line)
